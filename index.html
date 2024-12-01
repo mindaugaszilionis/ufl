@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lietuvių bendruomenė, aktyviai dalyvaujanti ESPN NBA Fantasy platformos žaidimuose. UFL vienija 32 komandas dviejose lygose.">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Fantasy Basketball Game</title>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <a href="index.html">
+                <img src="images/logo.svg" alt="Your Logo" class="header-logo">
+            </a>
+            <h1 class="title">United Fantasy League</h1> <!-- Pridėkite klasę, kad centravimą būtų lengviau valdyti -->
+            <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        </div>
+        <nav>
+            <ul id="nav-links">
+                <li><a href="alyga.html">A lyga</a></li>
+                <li><a href="blyga.html">B Lyga</a></li>
+                <li><a href="toto.html">Totalizatoriai</a></li>
+                <li><a href="rekordai.html">Rekordai</a></li>
+                <li><a href="about.html">Apie mus</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="description">
+            <div class="description-container">
+                <div class="description-text">
+                    <h2>UFL - kas tai?</h2>
+                    <p>UFL, arba "United Fantasy League" yra lietuvių bendruomenė išsimėčiusi visame pasaulyje, aktyviai žaidžianti 
+                        ESPN NBA fantasy platformos žaidimą. Šiuo metu bendruomenę sudaro 32 komandų valdytojai, kurie varžosi
+                        dvejose A ir B lygose. <br><a class="linkToGame" href="https://fantasy.espn.com/basketball">Nuoroda į žaidimą.</a>
+                        <br>
+                        A lygos nugalėtojas apdovanojamas čempiono žiedu, visai kaip NBA lygoje.
+                    </p>
+                </div>
+                <div class="description-images">
+                    <img src="images/ziedas1.jpg" alt="2024m cempiono ziedai" class="description-image">
+                    <img src="images/ziedas2.jpg" alt="2024m cempiono ziedai" class="description-image">
+                </div>
+            </div>
+        </section>
+        
+            <!-- Countdown Section -->
+            <section id="countdowns">
+                <div class="countdown" id="countdown1">
+                    <h3>Iki sezono pabaigos liko:</h3>
+                    <div class="time" id="timer1"></div>
+                </div>
+                <div class="countdown" id="countdown2">
+                    <h3>Iki mainų pabaigos liko:</h3>
+                    <div class="time" id="timer2"></div>
+                </div>
+                <div class="countdown" id="daysSince">
+                    <h3>Nuo sezono pradžios praėjo</h3>
+                    <div class="time" id="daysCounter"></div>
+                </div>
+            </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 United Fantasy League </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
