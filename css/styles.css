@@ -199,6 +199,63 @@ footer {
     animation: fadeIn 2s ease-in-out forwards;
 }
 
+/*news section*/
+#news-article {
+    padding: 20px;
+}
+
+.news-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between news items */
+}
+
+.news-item {
+    display: flex;
+    justify-content: start; /* Align items horizontally */
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Inherit color */
+    border: 1px solid #ddd; /* Optional border for clarity */
+    border-radius: 5px; /* Rounded corners */
+    overflow: hidden; /* Ensure contained layout */
+}
+
+.news-image {
+    width: 150px; /* Adjust the width of the image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.news-content {
+    padding: 10px; /* Padding for text content */
+}
+
+.news-title {
+    margin: 0; /* Remove margin for title */
+    font-size: 1.2rem; /* Title size */
+}
+
+.news-description {
+    margin: 5px 0 0; /* Margin for description */
+    color: var(--secondary-color); /* Optional color for description */
+}
+
+.news-date {
+    margin: 5px 0 0; /* Margin for description */
+    color: var(--primary-color); /* Optional color for description */
+    text-align: right; 
+
+}
+
+.news-detail-lentele {
+    width: 100%; /* Makes it responsive */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 15px; /* Space above the image */
+    border-radius: 5px; /* Optional: add some rounding to the corners */
+}
+
+.news-detail {
+    padding: 20px;
+}
 @keyframes slideIn {
     from {
         transform: translateY(100px);
