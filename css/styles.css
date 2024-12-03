@@ -199,7 +199,7 @@ footer {
     animation: fadeIn 2s ease-in-out forwards;
 }
 
-/*news section*/
+/* News Section */
 #news-article {
     padding: 20px;
 }
@@ -215,46 +215,52 @@ footer {
     justify-content: start; /* Align items horizontally */
     text-decoration: none; /* Remove underline from links */
     color: inherit; /* Inherit color */
-    border: 1px solid #ddd; /* Optional border for clarity */
+    border: 1px solid #ddd; /* Border for clarity */
     border-radius: 5px; /* Rounded corners */
-    overflow: hidden; /* Ensure contained layout */
+    overflow: hidden; /* Contain layout */
 }
 
 .news-image {
-    width: 150px; /* Adjust the width of the image */
+    width: 150px; /* Image width */
     height: auto; /* Maintain aspect ratio */
 }
 
 .news-content {
-    padding: 10px; /* Padding for text content */
+    padding: 10px; /* Padding for content */
+    display: flex;
+    flex-direction: column; /* Stack title, description, date */
 }
 
 .news-title {
-    margin: 0; /* Remove margin for title */
-    font-size: 1.2rem; /* Title size */
+    margin: 0; /* No margin */
+    font-size: 1.5rem; /* Larger title size for emphasis */
+    color: var(--primary-color); /* Title color */
 }
 
 .news-description {
     margin: 5px 0 0; /* Margin for description */
-    color: var(--secondary-color); /* Optional color for description */
+    color: var(--secondary-color)t; /* Description color */
 }
 
 .news-date {
-    margin: 5px 0 0; /* Margin for description */
-    color: var(--primary-color); /* Optional color for description */
-    text-align: right; 
-
-}
-
-.news-detail-lentele {
-    width: 100%; /* Makes it responsive */
-    height: auto; /* Maintain aspect ratio */
-    margin-top: 15px; /* Space above the image */
-    border-radius: 5px; /* Optional: add some rounding to the corners */
+    margin: 5px 0 0; /* Margin to separate from description */
+    color: var(--primary-color); /* Match with description */
+    font-size: 0.7rem;
+    text-align: right; /* Align to the left */
 }
 
 .news-detail {
-    padding: 20px;
+    padding: 20px; /* Main content padding */
+    background: white; /* Background color for detail page */
+    border-radius: 5px; /* Round corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.news-detail-image {
+    width: 100%; /* Full width for images in detail view */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded edges for images */
+    margin-top: 15px; /* Space above the image */
 }
 @keyframes slideIn {
     from {
