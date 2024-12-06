@@ -262,6 +262,33 @@ footer {
     border-radius: 5px; /* Rounded edges for images */
     margin-top: 15px; /* Space above the image */
 }
+/* Progres bar part */
+#progress-bar-container {
+    margin: 20px 0;
+    text-align: center; /* Center align the container */
+}
+
+.progress-bar {
+    background-color: #e0e0e0; /* Background of the bar */
+    border-radius: 5px; /* Rounded corners */
+    height: 30px; /* Height of the progress bar */
+    width: 100%; /* Full width */
+    position: relative;
+}
+
+.progress-fill {
+    background-color: var(--primary-color); /* Fill color */
+    height: 100%; /* Full height */
+    width: 0%; /* Initial width */
+    transition: width 0.5s ease-in-out; /* Animation for the fill */
+}
+
+.progress-percentage {
+    margin-top: 10px; /* Space above the percentage text */
+    font-weight: bold; /* Make the percentage text bold */
+    font-size: 1.2rem; /* Font size for the percentage text */
+}
+
 @keyframes slideIn {
     from {
         transform: translateY(100px);

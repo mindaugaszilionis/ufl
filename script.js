@@ -85,3 +85,35 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 1000); // Removes the shake effect after 1 second
     });
 });
+
+function updateProgressBar(startDate, endDate) {
+    const now = new Date().getTime();
+    const start = new Date(startDate).getTime();
+    const end = new Date(endDate).getTime();
+
+    if (now < start) {
+        // If current time is before the start date
+        document.getElementById('progress-fill').style.width = '0%';
+        document.getElementById('progress-percentage').innerText = '0%';
+    } else if (now > end) {
+        // If current time is after the end date
+        document.getElementById('progress-fill').style.width = '100%';
+        document.getElementById('progress-percentage').innerText = '100%';
+    } else {
+        // Calculate the progress percentage
+        const totalDuration = end - start;
+        const elapsedDuration = now - start;
+        const percentage = Math.floor((elapsedDuration / totalDuration) * 100);
+
+        // Update the progress bar and percentage text
+        document.getElementById('progress-fill').style.width = percentage + '%';
+        document.getElementById('progress-percentage').innerText = percentage + '%';
+    }
+}
+
+// Set your specific dates
+const startDate = "Oct 23, 2024 02:00:00"; // X day in the past
+const endDate = "Apr 14, 2025 02:00:00"; // Y time in the future
+
+// Initialize the progress bar
+updateProgressBar(startDate, endDate);
