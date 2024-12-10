@@ -291,7 +291,7 @@ footer {
 
 .slideshow-container {
     position: relative;
-    max-width: 100%;
+    max-width: 80%;
     margin: auto;
     overflow: hidden; /* Hide overflow */
 }
@@ -301,10 +301,10 @@ footer {
 }
 
 .mySlides img {
-    width: 100%;
-    height: auto; /* Maintain aspect ratio */
-    max-height: 400px; /* Set a maximum height */
-    object-fit: cover; /* Cover the space without distortion */
+    max-width: 600px; /* Set a fixed width */
+    height: auto; /* Set a fixed height */
+    max-height: 400px;
+    object-fit: cover; /* Maintain aspect ratio while covering the area */
 }
 
 @keyframes slideIn {
