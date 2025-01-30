@@ -332,15 +332,17 @@ footer {
     padding: 0;
     margin: 0;
     flex: 1; /* Allow this to grow */
+    padding: 20px;
 }
 
 #winners-list li {
     margin-bottom: 10px;
+    padding: 20px;
 }
 
 .tournament-name {
     font-weight: bold;
-    padding: 20px;
+
 }
 
 #winners-list .winner-name {
