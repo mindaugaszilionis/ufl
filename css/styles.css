@@ -321,7 +321,7 @@ footer {
     padding: 20px;
 }
 
-h1 {
+.container h1 {
     width: 100%; /* Take full width for better alignment */
     margin-bottom: 20px;
     text-align: center; /* Center the heading */
@@ -340,6 +340,7 @@ h1 {
 
 .tournament-name {
     font-weight: bold;
+    padding: 20px;
 }
 
 #winners-list .winner-name {
