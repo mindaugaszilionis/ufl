@@ -307,6 +307,58 @@ footer {
     object-fit: cover; /* Maintain aspect ratio while covering the area */
 }
 
+#toto
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap */
+    justify-content: space-between;
+    align-items: flex-start;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+h1 {
+    width: 100%; /* Take full width for better alignment */
+    margin-bottom: 20px;
+    text-align: center; /* Center the heading */
+}
+
+#winners-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    flex: 1; /* Allow this to grow */
+}
+
+#winners-list li {
+    margin-bottom: 10px;
+}
+
+.tournament-name {
+    font-weight: bold;
+}
+
+#winners-list .winner-name {
+    margin-left: 10px;
+}
+
+#photos {
+    display: flex;
+    flex-wrap: wrap; /* Allow images to wrap */
+    gap: 10px; /* Space between images */
+    justify-content: center; /* Center the images */
+}
+
+.photo {
+    max-width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    width: 100px; /* Set a max width */
+}
+
 @keyframes slideIn {
     from {
         transform: translateY(100px);
